@@ -1,5 +1,18 @@
 public class Products<T> {
-    private String Nombre;
+    private static final String[]Nombre = {
+            "PS5",
+            "Steam Deck",
+            "Nintendo Switch",
+            "Macbook PRO",
+            "Apple Watch",
+            "Ipad",
+            "Slimbook",
+            "Vuforia smartglasses",
+            "Google glass",
+            "HTC Vibe",
+            "Holo Lens"
+
+    };
     private int precioProduct;
 
     @Override
@@ -10,19 +23,4 @@ public class Products<T> {
                 '}';
     }
 
-    public String getNombre() {
-        return Nombre;
-    }
-
-    public void setNombre(String nombre) {
-        Nombre = nombre;
-    }
-
-    public int getPrecioProduct() {
-        return precioProduct;
-    }
-
-    public void setPrecioProduct(int precioProduct) {
-        this.precioProduct = precioProduct;
-    }
 }
